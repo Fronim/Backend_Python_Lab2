@@ -1,5 +1,6 @@
 from datetime import date, datetime, time
-class Person:
+from LivingCreature import LivingCreature
+class Person(LivingCreature):
     def __init__ (self, first_name, last_name, birth_date):
         self.__first_name = str(first_name).capitalize()
         self.__last_name = str(last_name).capitalize()
@@ -8,14 +9,13 @@ class Person:
     @property
     def first_name(self) -> str:
         return self.__first_name
-
     @property
     def last_name(self) -> str:
         return self.__last_name
-
     @property
     def birth_date(self) -> date:
         return self.__birth_date
+
 
     def get_fname(self) -> str:
         return f"{self.__last_name} {self.__first_name}"

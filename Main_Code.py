@@ -51,8 +51,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-'''
-git remote add origin https://github.com/Fronim/Backend_Python_Lab2.git
-git branch -M main
-git push -u origin main
-'''
